@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+.pnpm-debug.log
+
+# Logs
+logs/
+*.log
+
+# Diretórios temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+
+# Diretórios de compilação
+dist/
+build/
+
+# Configurações do editor
+.vscode/
+.idea/
+
+# Cache
+.cache/
+
+# Arquivos de debug
+*.log
+*.lock
+*.tmp
+*.bak
+
+# Arquivos do sistema operacional
+*.swp
+*.swo
+
+# Outros
+coverage/

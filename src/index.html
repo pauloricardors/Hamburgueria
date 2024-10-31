@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/672867bcca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KingBurger - a melhor de pinheiro">
+    <!-- <meta property="og:image" content="Dev Burger - a imagem do deploy"> -->
+    <meta property="og:description" content="O melhor Hamburger de Pinheiro">
+    <meta property="og:site_name" content="KingBurger">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+
+    <title>KingBurger</title>
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="h-[420px] w-full bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="../assets/hamb-1.png" alt="logo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">KingBurger</h1>
+            <span class="text-white font-medium">Centro, Pinheiro - MA</span>
+            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium"> Seg à Dom - 18:00 às 23:00</span>
+            </div>
+        </div>
+    </header>
+    <!--FIM DO HEADER  -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio</h2>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+        <main class="grid grid-cols-1 p-3 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl">
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-1.png" alt="Hamburger Smash"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Royal Cheddar</p>
+                    <p class="text-sm">Um hambúrguer suculento de carne bovina grelhada, coroado com cheddar cremoso,
+                        cebola caramelizada e bacon crocante, no pão brioche.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Royal Cheddar"
+                            data-price="29.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-2.png" alt="Hamburger Duplo"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Imperial BBQ</p>
+                    <p class="text-sm">Hambúrguer de carne bovina, molho barbecue artesanal, queijo prato, picles e
+                        cebola roxa, tudo em um pão australiano macio.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 31.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Imperial BBQ"
+                            data-price="31.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-3.png" alt="Rei Smash"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Rei Smash</p>
+                    <p class="text-sm">Dois discos de carne smash, finos e crocantes, queijo americano derretido,
+                        maionese da casa e picles no pão de batata.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 27.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Rei Smash"
+                            data-price="27.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-4.png" alt="Monarca Veggie"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Monarca Veggie</p>
+                    <p class="text-sm">Hambúrguer vegetariano de grão-de-bico temperado, com queijo prato, abacate,
+                        tomate e alface fresca, no pão integral.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Monarca Veggie"
+                            data-price="25.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-5.png" alt="Duplo King Bacon"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Duplo King Bacon</p>
+                    <p class="text-sm">Dois hambúrgueres bovinos suculentos, cobertos com queijo cheddar, cebola
+                        crocante, maionese e fatias generosas de bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 34.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Duplo King Bacon"
+                            data-price="34.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-6.png" alt="Coronado Pepper"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Coronado Pepper</p>
+                    <p class="text-sm">Hambúrguer bovino, queijo prato, pimentão grelhado, jalapeños, molho de maionese
+                        picante e alface americana, no pão de gergelim.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 30.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Coronado Pepper"
+                            data-price="30.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-7.png" alt="Majestoso Blue Cheese"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Majestoso Blue Cheese</p>
+                    <p class="text-sm">Hambúrguer gourmet de carne bovina com queijo gorgonzola, cebola caramelizada,
+                        rúcula e molho especial da casa, no pão brioche.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 33.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Majestoso Blue Cheese"
+                            data-price="33.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="../assets/hamb-8.png" alt="Soberano Crispy Chicken"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Soberano Crispy Chicken</p>
+                    <p class="text-sm">Peito de frango empanado, crocante por fora e suculento por dentro, com cheddar,
+                        maionese defumada, e alface americana, no pão brioche.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Soberano Crispy Chicken"
+                            data-price="28.90">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM -->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+        <!-- GRID BEBIDAS -->
+        <div class="grid grid-cols-1 p-3 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl" id="menu">
+
+            <!-- BEBIDA ITEM -->
+            <div class="flex gap-2 w-full">
+                <img src="../assets/refri-1.png" alt="lata"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Coca lata" data-price="6">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM BEBIDA ITEM -->
+
+            <!-- BEBIDA ITEM -->
+            <div class="flex gap-2 w-full">
+                <img src="../assets/refri-2.png" alt="lata"
+                    class="w-28 h-28 rounded-md hover:scale-100 hover:-rotate-2 duration-200">
+
+                <div class="w-full">
+                    <p class="font-bold">Guarana lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn " data-name="Guarana lata"
+                            data-price="6">
+                            <i class="fa-solid fa-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM BEBIDA ITEM -->
+        </div>
+        <!-- FIM GRID BEBIDAS -->
+    </div>
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo" id="address"
+                class="w-full border-2  p-1 rounded my-1">
+
+            <p class="text-red-500 hidden " id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full ">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded ">Finalizar pedido</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FIM MODAL CART -->
+
+    <!-- BUTTON CART FOOTER -->
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            ( <span id="cart-count">0</span>)
+            Meu carrinho
+            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- FIM BUTTON CART FOOTER -->
+    <script src="../script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+<!-- Create by Paulo Ricardo -->
+
+</html>
